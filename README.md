@@ -1,9 +1,8 @@
-# portfolio
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sagar Vinodiya | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -57,6 +56,33 @@
       color: #e50914;
     }
 
+    #photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      padding: 0 20px;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.6));
+    }
+
+    #photo img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #e50914;
+      box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+      margin-bottom: 20px;
+    }
+
+    #photo p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      color: #ccc;
+    }
+
     section {
       padding: 60px 20px;
     }
@@ -76,31 +102,6 @@
       display: block;
       margin: 10px auto 0;
       border-radius: 2px;
-    }
-
-    #photo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    #photo img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #e50914;
-      box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
-    }
-
-    #photo p {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      max-width: 800px;
-      color: #ccc;
     }
 
     .container {
@@ -209,6 +210,11 @@
         flex-direction: column;
         align-items: center;
       }
+
+      #photo img {
+        width: 180px;
+        height: 180px;
+      }
     }
   </style>
 </head>
@@ -239,52 +245,22 @@
     <section id="skills" class="container">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="card">
-          <h4>Languages</h4>
-          <p>Java, Python, SQL, VHDL</p>
-        </div>
-        <div class="card">
-          <h4>Frameworks/Tools</h4>
-          <p>Streamlit, MySQL, Bootstrap</p>
-        </div>
-        <div class="card">
-          <h4>Concepts</h4>
-          <p>Data Visualization, DB Design</p>
-        </div>
-        <div class="card">
-          <h4>Platforms</h4>
-          <p>NodeMCU, Raspberry Pi Pico W</p>
-        </div>
-        <div class="card">
-          <h4>AI & Other</h4>
-          <p>Circuit Sim, NLP, AI Chatbots</p>
-        </div>
-        <div class="card">
-          <h4>Soft Skills</h4>
-          <p>Teamwork, Communication</p>
-        </div>
+        <div class="card"><h4>Languages</h4><p>Java, Python, SQL, VHDL</p></div>
+        <div class="card"><h4>Frameworks/Tools</h4><p>Streamlit, MySQL, Bootstrap</p></div>
+        <div class="card"><h4>Concepts</h4><p>Data Visualization, DB Design</p></div>
+        <div class="card"><h4>Platforms</h4><p>NodeMCU, Raspberry Pi Pico W</p></div>
+        <div class="card"><h4>AI & Other</h4><p>Circuit Sim, NLP, AI Chatbots</p></div>
+        <div class="card"><h4>Soft Skills</h4><p>Teamwork, Communication</p></div>
       </div>
     </section>
 
     <section id="projects" class="container">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <div class="card">
-          <h4>IoT Water Monitor</h4>
-          <p>Monitors water quality using sensors and uploads data to the cloud.</p>
-        </div>
-        <div class="card">
-          <h4>Phone Recommendation System</h4>
-          <p>Built using Streamlit & SQL, recommends phones based on user input.</p>
-        </div>
-        <div class="card">
-          <h4>Job Recruitment Portal</h4>
-          <p>Platform for job listings, applications, and employer analytics.</p>
-        </div>
-        <div class="card">
-          <h4>AI Chatbot</h4>
-          <p>Customer support chatbot with NLP & sentiment analysis.</p>
-        </div>
+        <div class="card"><h4>IoT Water Monitor</h4><p>Monitors water quality using sensors and uploads data to the cloud.</p></div>
+        <div class="card"><h4>Phone Recommendation System</h4><p>Built using Streamlit & SQL, recommends phones based on user input.</p></div>
+        <div class="card"><h4>Job Recruitment Portal</h4><p>Platform for job listings, applications, and employer analytics.</p></div>
+        <div class="card"><h4>AI Chatbot</h4><p>Customer support chatbot with NLP & sentiment analysis.</p></div>
       </div>
     </section>
 
